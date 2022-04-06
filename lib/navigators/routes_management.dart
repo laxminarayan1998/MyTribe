@@ -11,4 +11,8 @@ class RouteManagement {
   static void goToHome() {
     Get.offNamed<void>(Routes.home);
   }
+
+  static void offToSignIn() {
+    Get.offNamed(Routes.login);
+  }
 }

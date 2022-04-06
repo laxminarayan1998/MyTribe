@@ -1,3 +1,3 @@
-import 'package:get/state_manager.dart';
+import 'package:get/get.dart';
 
 class HomeController extends GetxController {}

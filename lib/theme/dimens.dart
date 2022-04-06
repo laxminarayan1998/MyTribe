@@ -35,6 +35,7 @@ abstract class Dimens {
   static double eighteen = 18.sp;
   static double nineteen = 19.sp;
   static double twenty = 20.sp;
+  static double twentyFour = 24.sp;
   static double twentyFive = 25.sp;
   static double thirty = 30.sp;
   static double thirtyFive = 35.sp;
@@ -60,6 +61,9 @@ abstract class Dimens {
         height: percentHeight(value),
       );
 
+  static EdgeInsets edgeInsetsAll(double edgeInsetsValue) =>
+      EdgeInsets.all(edgeInsetsValue);
+
   static SizedBox box0 = const SizedBox.shrink();
 
   static SizedBox boxHeight3 = SizedBox(height: Dimens.three);
@@ -67,6 +71,8 @@ abstract class Dimens {
   static SizedBox boxHeight10 = SizedBox(height: Dimens.ten);
   static SizedBox boxHeight15 = SizedBox(height: Dimens.fifteen);
   static SizedBox boxHeight20 = SizedBox(height: Dimens.twenty);
+  static SizedBox boxHeight30 = SizedBox(height: Dimens.thirty);
+  static SizedBox boxHeight50 = SizedBox(height: Dimens.fifty);
 
   static SizedBox boxWidth3 = SizedBox(width: Dimens.three);
   static SizedBox boxWidth5 = SizedBox(width: Dimens.five);

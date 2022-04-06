@@ -18,6 +18,20 @@ class AppPages {
       transition: Transition.rightToLeft,
     ),
     GetPage(
+      name: _Paths.login,
+      transitionDuration: transistionDuration,
+      page: () => const LoginView(),
+      binding: LoginBinding(),
+      transition: Transition.rightToLeft,
+    ),
+    GetPage(
+      name: _Paths.otpLogin,
+      transitionDuration: transistionDuration,
+      page: () => const OtpLoginView(),
+      binding: LoginBinding(),
+      transition: Transition.rightToLeft,
+    ),
+    GetPage(
       name: _Paths.home,
       transitionDuration: transistionDuration,
       page: () => const HomeView(),

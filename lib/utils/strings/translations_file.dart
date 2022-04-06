@@ -14,6 +14,10 @@ class TranslationFile extends Translations {
           'noInternet': 'You are not connected to the internet. Please check.',
           'dataNotFound': 'Data Not Found',
           'okay': 'Okay',
+          'emailMobile': 'Email/Mobile',
+          'signIn': 'Sign In',
+          'myTribe': 'My Tribe',
+          'or': 'OR',
         },
       };
 }
