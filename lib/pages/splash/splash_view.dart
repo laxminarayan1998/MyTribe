@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hardware_city/navigators/navigators.dart';
+import 'package:my_tribe/navigators/navigators.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({Key? key}) : super(key: key);

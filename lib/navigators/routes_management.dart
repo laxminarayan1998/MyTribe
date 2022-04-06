@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:hardware_city/navigators/navigators.dart';
+import 'package:my_tribe/navigators/navigators.dart';
 
 class RouteManagement {
   /// Go to the splash screen.

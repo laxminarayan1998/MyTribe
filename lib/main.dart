@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:hardware_city/utils/utils.dart';
+import 'package:my_tribe/utils/utils.dart';
 
 import 'api_calls/services/services.dart';
 import 'navigators/navigators.dart';

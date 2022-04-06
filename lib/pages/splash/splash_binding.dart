@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:hardware_city/pages/pages.dart';
+import 'package:my_tribe/pages/pages.dart';
 
 class SplashBinding extends Bindings {
   @override

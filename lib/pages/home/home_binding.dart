@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:hardware_city/pages/home/home.dart';
+import 'package:my_tribe/pages/home/home.dart';
 
 class HomeBinding extends Bindings {
   @override

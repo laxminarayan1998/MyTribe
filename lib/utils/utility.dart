@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hardware_city/widgets/widgets.dart';
+import 'package:my_tribe/widgets/widgets.dart';
 import 'package:logger/logger.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 

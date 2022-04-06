@@ -1,5 +1,5 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:hardware_city/api_calls/api_helper.dart';
+import 'package:my_tribe/api_calls/api_helper.dart';
 
 class ConnectHelper {
   final _flutterSecureStorage = const FlutterSecureStorage();

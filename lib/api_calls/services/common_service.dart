@@ -4,7 +4,7 @@ import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:get/get.dart';
-import 'package:hardware_city/utils/utils.dart';
+import 'package:my_tribe/utils/utils.dart';
 
 /// A service which will be used to handle the basic
 /// operations in the application. This will be used to separate the UI related

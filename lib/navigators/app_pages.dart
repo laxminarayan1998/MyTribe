@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:hardware_city/pages/home/home.dart';
-import 'package:hardware_city/pages/pages.dart';
+import 'package:my_tribe/pages/home/home.dart';
+import 'package:my_tribe/pages/pages.dart';
 
 part 'app_routes.dart';
 

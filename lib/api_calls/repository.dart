@@ -1,4 +1,4 @@
-import 'package:hardware_city/api_calls/connect_helper.dart';
+import 'package:my_tribe/api_calls/connect_helper.dart';
 
 class Repository {
   Repository(this._connectHelper);

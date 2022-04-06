@@ -3,8 +3,8 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:hardware_city/api_calls/api_call.dart';
-import 'package:hardware_city/utils/utils.dart';
+import 'package:my_tribe/api_calls/api_call.dart';
+import 'package:my_tribe/utils/utils.dart';
 import 'package:http/http.dart' as http;
 
 /// API WRAPPER to call all the APIs and handle the error status codes
