@@ -1,6 +1,6 @@
 {
-    "name": "hardware_city",
-    "short_name": "hardware_city",
+    "name": "my_tribe",
+    "short_name": "my_tribe",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

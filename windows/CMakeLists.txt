@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(hardware_city LANGUAGES CXX)
+project(my_tribe LANGUAGES CXX)
 
-set(BINARY_NAME "hardware_city")
+set(BINARY_NAME "my_tribe")
 
 cmake_policy(SET CMP0063 NEW)
 
