@@ -18,6 +18,9 @@ class TranslationFile extends Translations {
           'signIn': 'Sign In',
           'myTribe': 'My Tribe',
           'or': 'OR',
+          'welcomeTo': 'Welcome To',
+          'sitBackWhileWeCollectKey': 'Sit back while we collect key',
+          'verify': 'Verify',
         },
       };
 }

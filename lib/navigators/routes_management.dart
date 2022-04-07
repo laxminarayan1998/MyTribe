@@ -12,6 +12,11 @@ class RouteManagement {
     Get.offNamed<void>(Routes.home);
   }
 
+  /// Go to the splash screen.
+  static void goToOtpLogin() {
+    Get.toNamed<void>(Routes.otpLogin);
+  }
+
   static void offToSignIn() {
     Get.offNamed(Routes.login);
   }

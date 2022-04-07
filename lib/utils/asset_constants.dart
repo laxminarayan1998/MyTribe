@@ -6,7 +6,9 @@
 /// Will be ignored for test since all are static values and would not change.
 abstract class AssetConstants {
   static const String logo = 'assets/logo.png';
+  static const String logo2 = 'assets/logoo.png';
   static const String google = 'assets/google.png';
   static const String apple = 'assets/apple.png';
   static const String apple1 = 'assets/apple1.png';
+  static const String imageLogo = 'assets/imagelogo.png';
 }

@@ -1,109 +1,128 @@
 import 'package:flutter/material.dart';
+import 'package:fluttericon/font_awesome_icons.dart';
 import 'package:get/get.dart';
+import 'package:my_tribe/navigators/routes_management.dart';
 import 'package:my_tribe/theme/theme.dart';
 import 'package:my_tribe/utils/utils.dart';
+import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        body: SafeArea(
-          child: Stack(
-            children: [
-              Container(
-                width: Get.width,
-                height: Get.height,
-                decoration: Styles.backgroundColor,
-              ),
-              Column(
-                children: [
-                  Container(
-                    padding: Dimens.edgeInsetsAll(Dimens.twenty),
-                    key: const Key('splash-image'),
-                    child: Image.asset(
-                      AssetConstants.logo,
-                      color: Colors.black,
-                      fit: BoxFit.contain,
-                    ),
+        body: Column(
+          children: [
+            Dimens.boxHeight100,
+            Column(
+              children: [
+                Container(
+                  height: Dimens.hundred * 1.5,
+                  width: Dimens.hundred * 1.5,
+                  // padding: Dimens.edgeInsetsAll(Dimens.twenty),
+                  key: const Key('splash-image'),
+                  child: Image.asset(
+                    AssetConstants.imageLogo,
+                    // color: ColorsValue.endColor,
+                    fit: BoxFit.contain,
                   ),
-                  Dimens.boxHeight50,
-                  Dimens.boxHeight30,
-                  Container(
-                    height: Dimens.fifty,
-                    width: Get.width * 0.7,
-                    decoration: Styles.cardDecoration,
-                    child: Center(
-                      child: Text(
-                        'emailMobile'.tr,
-                        style: Styles.mediumBlack18,
-                      ),
-                    ),
-                  ),
-                  Dimens.boxHeight20,
-                  Container(
-                    height: Dimens.fifty,
-                    width: Get.width * 0.7,
-                    decoration: Styles.cardDecoration,
-                    child: Center(
-                      child: Text(
-                        'signIn'.tr,
-                        style: Styles.mediumBlack18,
-                      ),
-                    ),
-                  ),
-                  Dimens.boxHeight50,
-                  Text(
-                    'or'.tr,
-                    style: Styles.boldBlack20,
-                  ),
-                  Dimens.boxHeight30,
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        height: Dimens.fourty,
-                        width: Dimens.fourty,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(Dimens.thirty),
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(Dimens.thirty),
-                          child: Image.asset(
-                            AssetConstants.google,
-                          ),
-                        ),
-                      ),
-                      Dimens.boxWidth10,
-                      Container(
-                        height: Dimens.fourty,
-                        width: Dimens.fourty,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(Dimens.thirty),
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(Dimens.thirty),
-                          child: Image.asset(
-                            AssetConstants.apple1,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Spacer(),
-                  Padding(
-                    padding: Dimens.edgeInsets16,
+                ),
+                Dimens.boxHeight10,
+                // GradientText(
+                //   'welcomeTo'.tr.toUpperCase(),
+                //   style: Styles.boldPrimary20,
+                //   colors: const [
+                //     ColorsValue.endColor2,
+                //     ColorsValue.startColor2,
+                //   ],
+                // ),
+                GradientText(
+                  'myTribe'.tr.toUpperCase(),
+                  style: Styles.boldPrimary24,
+                  colors: const [
+                    ColorsValue.endColor2,
+                    ColorsValue.startColor2,
+                  ],
+                ),
+              ],
+            ),
+            const Spacer(),
+            Column(
+              children: [
+                Container(
+                  height: Dimens.fifty,
+                  width: Get.width * 0.5,
+                  decoration: Styles.buttonDecoration,
+                  child: Center(
                     child: Text(
-                      'myTribe'.tr,
-                      style: Styles.mediumBlack20,
+                      'emailMobile'.tr,
+                      style: Styles.mediumWhite18,
                     ),
                   ),
-                ],
-              ),
-            ],
-          ),
+                ),
+                Dimens.boxHeight20,
+                Container(
+                  height: Dimens.fifty,
+                  width: Get.width * 0.5,
+                  decoration: Styles.buttonDecoration,
+                  child: Center(
+                    child: Text(
+                      'signIn'.tr,
+                      style: Styles.mediumWhite18,
+                    ),
+                  ),
+                ),
+                Dimens.boxHeight50,
+                GradientText(
+                  'or'.tr,
+                  style: Styles.boldPrimary20,
+                  colors: const [
+                    ColorsValue.endColor2,
+                    ColorsValue.startColor2,
+                  ],
+                ),
+                Dimens.boxHeight30,
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Container(
+                        // color: Colors.white,
+                        decoration: BoxDecoration(
+                          gradient: ColorsValue.bluePinkGradient2,
+                        ),
+                        child: Icon(
+                          FontAwesome.google,
+                          size: Dimens.thirty,
+                          color: Colors.white,
+                          // color: ColorsValue.endColor2,
+                        ),
+                      ),
+                    ),
+                    Dimens.boxWidth10,
+                    IconButton(
+                      onPressed: () {
+                        RouteManagement.goToOtpLogin();
+                      },
+                      icon: Container(
+                        decoration: BoxDecoration(
+                          gradient: ColorsValue.bluePinkGradient2,
+                        ),
+                        child: Icon(
+                          FontAwesome.apple,
+                          size: Dimens.thirty,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Dimens.boxHeight50,
+              ],
+            ),
+          ],
         ),
       );
 }

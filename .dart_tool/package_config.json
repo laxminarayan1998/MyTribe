@@ -482,6 +482,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "simple_gradient_text",
+      "rootUri": "file:///home/embed/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/simple_gradient_text-1.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///home/embed/snap/flutter/common/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -590,7 +596,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-04-07T15:48:21.878227Z",
+  "generated": "2022-04-07T18:48:07.456576Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }
