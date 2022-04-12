@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
-import 'package:my_tribe/navigators/navigators.dart';
+
+import 'app_pages.dart';
 
 class RouteManagement {
   /// Go to the splash screen.
@@ -10,14 +11,5 @@ class RouteManagement {
   /// Go to the splash screen.
   static void goToHome() {
     Get.offNamed<void>(Routes.home);
-  }
-
-  /// Go to the splash screen.
-  static void goToOtpLogin() {
-    Get.toNamed<void>(Routes.otpLogin);
-  }
-
-  static void offToSignIn() {
-    Get.offNamed(Routes.login);
   }
 }

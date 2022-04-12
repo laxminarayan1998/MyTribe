@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
-import 'package:my_tribe/pages/home/home.dart';
-import 'package:my_tribe/pages/pages.dart';
+
+import '../pages/home/home.dart';
+import '../pages/pages.dart';
 
 part 'app_routes.dart';
 
@@ -15,20 +16,6 @@ class AppPages {
       transitionDuration: transistionDuration,
       page: () => const SplashView(),
       binding: SplashBinding(),
-      transition: Transition.rightToLeft,
-    ),
-    GetPage(
-      name: _Paths.login,
-      transitionDuration: transistionDuration,
-      page: () => const LoginView(),
-      binding: LoginBinding(),
-      transition: Transition.rightToLeft,
-    ),
-    GetPage(
-      name: _Paths.otpLogin,
-      transitionDuration: transistionDuration,
-      page: () => const OtpLoginView(),
-      binding: LoginBinding(),
       transition: Transition.rightToLeft,
     ),
     GetPage(
